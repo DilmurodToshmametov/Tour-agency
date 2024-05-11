@@ -22,6 +22,100 @@
     z-index: 99;
 }
 
+/* Dilmurod */
+.bali,
+.maldives {
+    max-height: 209px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.philippine {
+    max-height: 467px;
+}
+
+.vietnam {
+    max-height: 241px;
+    width: 100%;
+    object-fit: cover;
+}
+.egypt,
+.uae,
+.turkey {
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.price{
+    color: #fe7200;
+}
+@media (max-width: 1200px) {
+    .maldives {
+        height: 209px;
+    }
+}
+
+@media(max-width: 990px) {
+    .philippine {
+        max-height: 641px;
+        height: 100%;
+    }
+
+    .egypt,
+    .uae,
+    .turkey {
+        height: 224px;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .philippine,
+    .maldives,
+    .vietnam,
+    .bali {
+        max-height: 1000px;
+        height: 240px;
+    }
+    .egypt,
+    .uae,
+    .turkey {
+        height: 300px;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .philippine,
+    .maldives,
+    .vietnam,
+    .bali {
+        height: 220px;
+    }
+}
+
+@media (max-width: 490px) {
+
+    .philippine,
+    .maldives,
+    .vietnam,
+    .bali {
+        height: 180px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .philippine,
+    .maldives,
+    .vietnam,
+    .bali {
+        height: 145px;
+    }
+}
+
+
 
 /*** Spinner ***/
 #spinner {
@@ -141,7 +235,7 @@
         border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: #FFFFFF;
@@ -178,7 +272,7 @@
     background-size: cover;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
 
@@ -325,6 +419,7 @@
 }
 
 @media (min-width: 768px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 200px;
@@ -332,6 +427,7 @@
 }
 
 @media (min-width: 992px) {
+
     .testimonial-carousel::before,
     .testimonial-carousel::after {
         width: 300px;
